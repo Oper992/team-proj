@@ -1,0 +1,50 @@
+.button {
+  outline: none;
+  width: 209px;
+  height: 44px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.313;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 22px;
+
+  &--white {
+    background-color: #ffffff;
+    color: #d41443;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &--accent {
+    background-color: #d41443;
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
+
+  &__icon {
+    width: 5px;
+    height: 10px;
+    margin-left: 13px;
+  }
+
+  &--white &__icon {
+    background-color: #d41443;
+  }
+
+  &--accent &__icon {
+    background-color: #ffffff;
+  }
+}
