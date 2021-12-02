@@ -22,18 +22,23 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 310px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 700px;
+    max-width: 730px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
 .section {
