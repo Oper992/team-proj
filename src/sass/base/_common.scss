@@ -2,8 +2,8 @@ $primary-font: DM Sans, sans-serif;
 $secondary-font: Titan One, cursive;
 
 body {
-  //background-color: var(--primary-white-color);
-  //color: var(--primary-text-color);
+  background-color: $primary-white-color;
+  color: $primary-text-color;
   font-family: $primary-font;
   font-style: normal;
 }
