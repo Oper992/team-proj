@@ -1,3 +1,59 @@
+/* BASE */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /*outline: 1px solid red;*/
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+.section {
+  width: 100vw;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* COMPONENTS */
+/* LAYOUT */
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -8,20 +64,20 @@
   padding-right: 20px;
   text-align: center;
 }
+
 .products__condition {
-  font-family: $secondary-font;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
-
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: $decoration-pink-color;
+  color: #ffa5ba;
 }
 
 .products__title {
-  color: $primary-red-color;
-  font-family: $secondary-font;
+  color: #d41443;
+  font-family: Titan One, cursive;
   font-weight: normal;
   font-size: 34px;
   line-height: 1.14;
@@ -30,53 +86,54 @@
   margin-bottom: 144px;
 }
 
-.products__list {
-}
 .products__item {
   margin-bottom: 130px;
-  background-color: ($background-dark-pink-color);
+  background-color: #ffb8ca;
   border-radius: 24px;
-  &:nth-child(2) {
-    margin-bottom: 129px;
-  }
-  &:last-child {
-    margin-bottom: 0px;
-  }
   padding-top: 161px;
   padding-bottom: 41px;
   padding-left: 41px;
   padding-right: 39px;
 }
+
+.products__item:nth-child(2) {
+  margin-bottom: 129px;
+}
+
+.products__item:last-child {
+  margin-bottom: 0px;
+}
+
 .products__name {
-  font-family: $secondary-font;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $primary-white-color;
-
+  color: #ffffff;
   margin-bottom: 66px;
 }
+
 .products__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-
   letter-spacing: 0.04em;
-  color: $primary-white-color;
-
+  color: #ffffff;
   margin-bottom: 30px;
 }
+
 .products__button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
 }
+
 .products__icon {
   width: 10px;
   height: 10px;
   background-color: tomato;
 }
+/*# sourceMappingURL=main.css.map */
