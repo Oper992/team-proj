@@ -1,3 +1,26 @@
+.footer {
+  background: $background-light-pink-color;
+
+  &__text {
+    font-family: $secondary-font;
+    font-weight: normal;
+  }
+
+  &__text--pink {
+    font-size: 18px;
+    line-height: 1.17;
+    color: $decoration-pink-color;
+    margin-bottom: 17px;
+  }
+
+  &__text--accent_color {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: $primary-red-color;
+  }
+}
+
 .bottom {
   display: flex;
   justify-content: center;
@@ -8,7 +31,6 @@
   padding-bottom: 25px;
 
   border-top: 1px solid $line-color;
-  background: $background-light-pink-color;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
