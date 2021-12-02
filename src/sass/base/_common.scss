@@ -1,16 +1,5 @@
 $primary-font: DM Sans, sans-serif;
 $secondary-font: Titan One, cursive;
-$primary-red-color: #d41443;
-$primary-white-color: #ffffff;
-$background-white-color: #e5e5e5;
-$background-light-pink-color: #fff5f6;
-$background-dark-pink-color: #ffb8ca;
-$decoration-pink-color: #ffa5ba;
-$decoration-brown-color: #f0d1a5;
-$decoration-green-color: #c2e297;
-$primary-text-color: #000000;
-$button-hover-color-red: #c7133e;
-$button-hover-color-lite: #ecebeb;
 
 body {
   background-color: $primary-white-color;
@@ -37,25 +26,25 @@ a {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 310px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 700px;
+    max-width: 730px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
 .section {
   width: 100vw;
-  padding-top: 120px;
-  padding-bottom: 95px;
+  //padding-top: 120px;
+  //padding-bottom: 95px;
 
-  @media screen and (min-width: 1600px) {
-    padding-top: 127px;
-    padding-bottom: 110px;
-  }
+  /*@media screen and (min-width: 1600px) {
+    //padding-top: 127px;
+    //padding-bottom: 110px;
+  }*/
 }
 .visually-hidden {
   visibility: hidden;
