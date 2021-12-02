@@ -1,8 +1,22 @@
+$primary-font: DM Sans, sans-serif;
+$secondary-font: Titan One, cursive;
+$primary-red-color: #d41443;
+$primary-white-color: #ffffff;
+$background-white-color: #e5e5e5;
+$background-light-pink-color: #fff5f6;
+$background-dark-pink-color: #ffb8ca;
+$decoration-pink-color: #ffa5ba;
+$decoration-brown-color: #f0d1a5;
+$decoration-green-color: #c2e297;
+$primary-text-color: #000000;
+$button-hover-color-red: #c7133e;
+$button-hover-color-lite: #ecebeb;
+
 body {
-  //background-color: var(--primary-white-color);
-  //color: var(--primary-text-color);
-  //font-family: Roboto, sans-serif;
-  //font-style: normal;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $primary-font;
+  font-style: normal;
 }
 h1,
 h2,
@@ -23,14 +37,14 @@ a {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 280px;
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
-    max-width: 738px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 700px;
   }
 
-  @media screen and (min-width: 1600px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
   }
 }
 .section {
