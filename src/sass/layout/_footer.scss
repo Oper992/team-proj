@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  border-top: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__text {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: #907e82;
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
