@@ -36,48 +36,26 @@
     }
   }
 
-  &__text {
-    font-family: $secondary-font;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
   &__text--pink {
-    font-size: 18px;
-    line-height: 1.17;
-    color: $decoration-pink-color;
     margin-bottom: 17px;
-    @media screen and (max-width: 200px) {
-      font-size: 14px;
-    }
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.15;
-      letter-spacing: 0.04em;
+    @media screen and (max-width: 290px) {
+      font-size: 7vw;
     }
     @media screen and (min-width: 1200px) {
       font-size: 30px;
-      line-height: 1.14;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
     }
   }
 
   &__text--accent_color {
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    color: $primary-red-color;
-
-    @media screen and (max-width: 200px) {
-      font-size: 25px;
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 1.15;
-      letter-spacing: 0.06em;
+    @media screen and (max-width: 290px) {
+      font-size: 12vw;
     }
     @media screen and (min-width: 1200px) {
       font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
     }
   }
 
@@ -101,8 +79,8 @@
   }
   &__link {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -113,6 +91,11 @@
     &:hover,
     &:focus {
       background-color: $primary-red-color;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
     }
   }
 
@@ -125,6 +108,10 @@
     font-size: 12px;
     line-height: 1.86;
     color: $primary-text-color;
+
+    @media screen and (max-width: 290px) {
+      font-size: 4vw;
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
