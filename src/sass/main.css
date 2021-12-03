@@ -25,25 +25,30 @@ a {
 }
 
 .container {
+  padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 310px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 700px;
+    max-width: 730px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
 
 .section {
   width: 100vw;
+  /*@media screen and (min-width: 1600px) {
+    //padding-top: 127px;
+    //padding-bottom: 110px;
+  }*/
 }
 
 .visually-hidden {
@@ -87,6 +92,7 @@ a {
 }
 
 .products__item {
+  position: relative;
   margin-bottom: 130px;
   background-color: #ffb8ca;
   border-radius: 24px;
@@ -98,13 +104,85 @@ a {
 
 .products__item:nth-child(2) {
   margin-bottom: 129px;
+  background-color: #f0d1a5;
 }
 
 .products__item:last-child {
   margin-bottom: 0px;
+  background-color: #c2e297;
+}
+
+.products__item:first-child::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(./../images/products/mobile-ice-cream.png);
+  background-size: contain;
+  max-width: 249px;
+  max-height: 252px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(5%, -45%);
+          transform: translate(5%, -45%);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:first-child::before {
+    background-image: url(./../images/products/mobile-ice-cream@2x.png);
+  }
+}
+
+.products__item:nth-child(2):before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(./../images/products/mobile-coffee.png);
+  background-size: contain;
+  max-width: 249px;
+  max-height: 252px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(5%, -45%);
+          transform: translate(5%, -45%);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:nth-child(2):before {
+    background-image: url(./../images/products/mobile-coffee@2x.png);
+  }
+}
+
+.products__item:last-child:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(./../images/products/mobile-milkshake.png);
+  background-size: contain;
+  max-width: 249px;
+  max-height: 252px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(5%, -45%);
+          transform: translate(5%, -45%);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:last-child:before {
+    background-image: url(./../images/products/mobile-milkshake@2x.png);
+  }
 }
 
 .products__name {
+  position: relative;
   font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 20px;
@@ -125,15 +203,59 @@ a {
 }
 
 .products__button {
-  width: 40px;
-  height: 40px;
+  line-height: 0;
   border-radius: 50%;
   border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .products__icon {
   width: 10px;
   height: 10px;
-  background-color: tomato;
+  fill: #d41443;
+}
+
+span {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 0;
+  margin-left: 20px;
+  padding: 3px;
+  top: 45%;
+  left: 46%;
+  -webkit-transform: translate(-200%, -200%);
+          transform: translate(-200%, -200%);
+}
+
+span:before {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 0;
+  padding: 3px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  left: -20px;
+  /* <-- align the circle horizontally */
+  top: 0;
+  /* <-- Added declaration             */
+}
+
+span:after {
+  position: absolute;
+  left: 20px;
+  /* <-- align the circle horizontally */
+  top: 0;
+  /* <-- Added declaration             */
+  content: '';
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 0;
+  padding: 3px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 /*# sourceMappingURL=main.css.map */

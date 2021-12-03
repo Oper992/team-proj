@@ -8,6 +8,9 @@
   padding-right: 20px;
   text-align: center;
 }
+
+//characteristic
+
 .products__condition {
   font-family: $secondary-font;
   font-weight: 400;
@@ -16,8 +19,12 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: $decoration-pink-color;
+  @media screen and (max-width: 290px) {
+    font-size: 7vw;
+  }
 }
 
+//main title
 .products__title {
   color: $primary-red-color;
   font-family: $secondary-font;
@@ -27,13 +34,25 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 144px;
+  @media screen and (max-width: 290px) {
+    font-size: 12vw;
+  }
 }
 
 .products__list {
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+  }
 }
 
+//products cards
 .products__item {
-  // min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 130px;
   background-color: ($background-dark-pink-color);
@@ -54,11 +73,8 @@
     position: absolute;
     display: block;
     content: '';
-    // border: 1px solid tomato;
     background-image: url(./../images/products/mobile-ice-cream.png);
     background-size: contain;
-    // width: 249px;
-    // height: 252px;
     max-width: 249px;
     max-height: 252px;
     width: 100%;
@@ -70,16 +86,16 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(./../images/products/mobile-ice-cream@2x.png);
     }
+    @media screen and (max-width: 290px) {
+      transform: translate(0, -41%);
+    }
   }
   &:nth-child(2):before {
     position: absolute;
     display: block;
     content: '';
-    // border: 1px solid tomato;
     background-image: url(./../images/products/mobile-coffee.png);
     background-size: contain;
-    // width: 249px;
-    // height: 252px;
     max-width: 249px;
     max-height: 252px;
     width: 100%;
@@ -91,16 +107,16 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(./../images/products/mobile-coffee@2x.png);
     }
+    @media screen and (max-width: 290px) {
+      transform: translate(0, -41%);
+    }
   }
   &:last-child:before {
     position: absolute;
     display: block;
     content: '';
-    // border: 1px solid tomato;
     background-image: url(./../images/products/mobile-milkshake.png);
     background-size: contain;
-    // width: 249px;
-    // height: 252px;
     max-width: 249px;
     max-height: 252px;
     width: 100%;
@@ -112,8 +128,12 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(./../images/products/mobile-milkshake@2x.png);
     }
+    @media screen and (max-width: 290px) {
+      transform: translate(0, -41%);
+    }
   }
 }
+// name of products on the card
 .products__name {
   position: relative;
   font-family: $secondary-font;
@@ -124,7 +144,11 @@
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 66px;
+  @media screen and (max-width: 290px) {
+    font-size: 7vw;
+  }
 }
+// description of products on the card
 .products__description {
   font-weight: 700;
   font-size: 14px;
@@ -132,12 +156,21 @@
   letter-spacing: 0.04em;
   color: $primary-white-color;
   margin-bottom: 30px;
+  @media screen and (max-width: 290px) {
+    font-size: 5vw;
+  }
 }
 .products__button {
   line-height: 0;
   border-radius: 50%;
   border: none;
-  padding: 10px;
+  // padding: 10px; *better use flex*
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   cursor: pointer;
 }
 .products__icon {
@@ -146,42 +179,48 @@
   fill: $primary-red-color;
 }
 
-// точечки
-span {
-  position: absolute;
-  // position: relative;
-  background-color: $primary-white-color;
-  border-radius: 5px;
-  font-size: 0;
-  margin-left: 20px;
-  padding: 3px;
-  top: 45%;
-  left: 46%;
-  transform: translate(-200%, -200%);
-}
-
-span:before {
-  position: absolute;
-
-  content: '';
-
-  background-color: $primary-white-color;
-  border-radius: 5px;
-  font-size: 0;
-  padding: 3px;
-  transform: translate(0%, 0%);
-  left: -20px; /* <-- align the circle horizontally */
-  top: 0; /* <-- Added declaration             */
-}
-
-span:after {
-  position: absolute;
-  left: 20px; /* <-- align the circle horizontally */
-  top: 0; /* <-- Added declaration             */
-  content: '';
-  background-color: $primary-white-color;
-  border-radius: 5px;
-  font-size: 0;
-  padding: 3px;
-  transform: translate(0%, 0%);
+// dots
+.products__dot {
+  display: none;
+  @media screen and (min-width: 235px) {
+    display: block;
+    position: absolute;
+    background-color: $primary-white-color;
+    border-radius: 5px;
+    font-size: 0;
+    margin-left: 20px;
+    padding: 3px;
+    top: 42%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 228px) {
+      top: 34%;
+      left: 40%;
+    }
+    @media screen and (min-width: 229px) and (max-width: 270px) {
+      top: 39%;
+    }
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: $primary-white-color;
+    border-radius: 5px;
+    font-size: 0;
+    padding: 3px;
+    transform: translate(0%, 0%);
+    left: -20px;
+    top: 0;
+  }
+  &:after {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    content: '';
+    background-color: $primary-white-color;
+    border-radius: 5px;
+    font-size: 0;
+    padding: 3px;
+    transform: translate(0%, 0%);
+  }
 }
