@@ -12,13 +12,13 @@
 //characteristic
 
 .products__condition {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 18px;
+  // font-family: $secondary-font;
+  // font-weight: 400;
+  // font-size: 18px;
   line-height: 1.16;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin-bottom: 15px;
-  color: $decoration-pink-color;
+  // color: $decoration-pink-color;
   @media screen and (max-width: 290px) {
     font-size: 7vw;
   }
@@ -26,13 +26,13 @@
 
 //main title
 .products__title {
-  color: $primary-red-color;
-  font-family: $secondary-font;
-  font-weight: normal;
-  font-size: 34px;
+  // color: $primary-red-color;
+  // font-family: $secondary-font;
+  // font-weight: 400;
+  // font-size: 34px;
   line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  // letter-spacing: 0.04em;
+  // text-transform: uppercase;
   margin-bottom: 144px;
   @media screen and (max-width: 290px) {
     font-size: 12vw;
