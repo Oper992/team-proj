@@ -1,3 +1,92 @@
 .contacts {
     background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
+    padding-top: 43px;
+
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+ .cafe {
+     padding-left: 25px;
+     padding-right: 25px;
+     mim-wids: 80px;
+     background: $decoration-brown-color;
+ }
+ 
+ .foodstruck {
+    padding-left: 28px;
+    padding-right: 28px;
+    min-width: 130px;  
+    background: $decoration-green-color;
+ }
+ 
+ .contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .contact-list {
+     margin-bottom: 54px;
+    
+     &__agency {
+    color: $primary-white-color;
+  }
+
+  &__agency-wraper {
+    display: inline-flex;
+    height: 16px;
+    margin-bottom: 25px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+  }
+
+  &__city {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+  }
+
+  &__description {
+    line-height: 1.5;
+    color: $secondary-text-color;
+
+    &::after {
+      display: block;
+      content: '';
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background-color: #e1e1e1;
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  &__schedule {
+      font-size: 16px;
+      color: $primary-text-color;
+    }
+
+    &__time {
+    margin-bottom: 10px;
+    color: $decoration-pink-color;
+    
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+ }
