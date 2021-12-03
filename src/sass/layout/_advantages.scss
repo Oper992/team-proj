@@ -1,42 +1,50 @@
-@mixin picture__before($pic) {
-  .advanteges-item::before {
-    content: '';
-    position: absolute;
-    background-image: $pic;
-  }
+@mixin picture__before($pic, $width) {
+  content: '';
+  background-image: url($pic);
+  width: $width;
+  position: absolute;
+  top: 0px;
+  height: 50px;
 }
 
 .advanteges {
   background-color: $background-light-pink-color;
+  padding-top: 20px;
+  padding-bottom: 48px;
 }
+
 .advanteges__item {
+  padding-top: 66px;
+  position: relative;
+  //отступ между текстом и картинкой
   &:not(:last-child) {
     margin-bottom: 38px;
   }
-  &:nth-child(1) {
-    @media screen and (min-device-pixel-ratio: 1),
-      (-webkit-min-device-pixel-ratio: 1),
-      (min-resolution: 96dpi),
-      (min-resolution: 1dppx) {
-      @include picture__before('../../../../../../src/images/advantages/apples.png');
-      // {
-      //   background-image: url(../src/images/advantages/milk.png);
-      // }
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      @include picture__before(url('D:\Go_IT\team-proj1\src\images\advantages\milk@2x.png'));
-      // @include picture__before {
-      //   background-image: url(../src/images/advantages/milk@2x.png);
-      // }
+  // картинки для екранов разной плотности
+  &:nth-child(1)::before {
+    @include picture__before('../images/advantages/milk.png', 33px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(1)::before {
+      @include picture__before('../images/advantages/milk@2x.png', 33px);
     }
   }
-}
-
-.advantegers__pic {
-  margin-bottom: 16px;
+  &:nth-child(2)::before {
+    @include picture__before('../images/advantages/apples.png', 50px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(2)::before {
+      @include picture__before('../images/advantages/apples@2x.png', 50px);
+    }
+  }
+  &:nth-child(3)::before {
+    @include picture__before('../images/advantages/lolipop.png', 44px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(3)::before {
+      @include picture__before('../images/advantages/lolipop@2x.png', 44px);
+    }
+  }
 }
 
 .advantegers__number {
@@ -49,7 +57,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   // position
-  position: relative;
   margin-bottom: 34px;
 }
 
