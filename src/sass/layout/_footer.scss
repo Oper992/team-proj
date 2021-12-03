@@ -28,6 +28,9 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    @media screen and (max-width: 230px) {
+      align-items: center;
+    }
     @media screen and (max-width: 767px) {
       align-self: self-end;
     }
@@ -44,6 +47,9 @@
     line-height: 1.17;
     color: $decoration-pink-color;
     margin-bottom: 17px;
+    @media screen and (max-width: 200px) {
+      font-size: 14px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 26px;
       line-height: 1.15;
@@ -60,6 +66,11 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     color: $primary-red-color;
+
+    @media screen and (max-width: 200px) {
+      font-size: 25px;
+    }
+
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.15;
@@ -82,6 +93,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 28px;
+
+      @media screen and (max-width: 220px) {
+        margin-right: 10px;
+      }
     }
   }
   &__link {
