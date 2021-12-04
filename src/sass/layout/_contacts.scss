@@ -1,6 +1,5 @@
 .contacts {
-    background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
-    padding-top: 43px;
+    
 
   font-family: DM Sans;
   font-weight: 500;
@@ -10,6 +9,10 @@
   letter-spacing: 0.04em;
 }
 
+.section-container {
+    background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
+    padding-top: 43px;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@
  .cafe {
      padding-left: 25px;
      padding-right: 25px;
-     mim-wids: 80px;
+     
      background: $decoration-brown-color;
  }
  
@@ -29,6 +32,7 @@
     background: $decoration-green-color;
  }
  
+ 
  .contacts-container {
     display: flex;
     flex-direction: column;
@@ -37,12 +41,13 @@
 
  .contact-list {
      margin-bottom: 54px;
+     font-size: 12px;
     
      &__agency {
     color: $primary-white-color;
   }
 
-  &__agency-wraper {
+    &__agency-wraper {
     display: inline-flex;
     height: 16px;
     margin-bottom: 25px;
@@ -53,15 +58,18 @@
     border-radius: 4px;
   }
 
-  &__city {
+    &__city {
     margin-bottom: 10px;
-
     font-size: 12px;
+    
   }
 
-  &__description {
+    &__description {
     line-height: 1.5;
     color: $secondary-text-color;
+    font-size: 12px;
+
+
 
     &::after {
       display: block;
@@ -74,8 +82,8 @@
     }
   }
 
-  &__schedule {
-      font-size: 16px;
+    &__schedule {
+      font-size: 12px;
       color: $primary-text-color;
     }
 
@@ -83,10 +91,114 @@
     margin-bottom: 10px;
     color: $decoration-pink-color;
     
-
     &:last-child {
       margin-bottom: 0;
     }
 
   }
+
+    &__time-saturday {
+    margin-bottom: 10px;
+    color: $decoration-pink-color;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background-color: #e1e1e1;
+      height: 1px;
+      width: 100%;
+    }
+
+  }
+
+    &__tel,
+    &__mail {
+    line-height: 1.5;
+    color: $secondary-text-color;
+    
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+    &__tel {
+    display: block;
+  }
+    &__item {
+    width: 220px;
+    padding: 43px 20px;
+    margin-bottom: 20px;
+
+    background: $primary-white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 10px 30px rgba(212, 20, 67, 0.3);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
  }
+ 
+.contacts-button__map,
+.contacts-button__franchise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  padding: 15px 17px;
+
+  border: transparent;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  cursor: pointer;
+}
+
+.contacts-button__map {
+  margin-bottom: 10px;
+
+  min-width: 160px;
+
+  background: $primary-red-color;
+  color: $primary-white-color;
+  
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-button__franchise {
+  width: 164px;
+  background: $primary-white-color;
+  color: $primary-red-color;
+
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-button__icon {
+  margin-left: 14px;
+  width: 8px;
+  height: 10px;
+}
+
+
+
+
+
+
+
+
