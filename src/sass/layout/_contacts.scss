@@ -1,6 +1,4 @@
 .contacts {
-    
-
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -12,6 +10,7 @@
 .section-container {
     background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
     padding-top: 43px;
+    padding-bottom: 63px;
 }
 .list {
   margin: 0;
@@ -154,7 +153,11 @@
 .contacts-button {
  width: 161.45px;
  height: 44px;
- margin-bottom: 10px;
+ 
+
+ &:not(:last-child) {
+     margin-bottom: 10px;
+ }
 }
 
 
