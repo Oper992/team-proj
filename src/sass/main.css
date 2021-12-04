@@ -59,6 +59,7 @@ a {
 
 /* COMPONENTS */
 /* LAYOUT */
+
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -126,10 +127,13 @@ a {
   top: 0;
   left: 0;
   -webkit-transform: translate(5%, -45%);
-          transform: translate(5%, -45%);
+  transform: translate(5%, -45%);
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products__item:first-child::before {
     background-image: url(./../images/products/mobile-ice-cream@2x.png);
   }
@@ -149,10 +153,13 @@ a {
   top: 0;
   left: 0;
   -webkit-transform: translate(5%, -45%);
-          transform: translate(5%, -45%);
+  transform: translate(5%, -45%);
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products__item:nth-child(2):before {
     background-image: url(./../images/products/mobile-coffee@2x.png);
   }
@@ -172,10 +179,13 @@ a {
   top: 0;
   left: 0;
   -webkit-transform: translate(5%, -45%);
-          transform: translate(5%, -45%);
+  transform: translate(5%, -45%);
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products__item:last-child:before {
     background-image: url(./../images/products/mobile-milkshake@2x.png);
   }
@@ -226,7 +236,7 @@ span {
   top: 45%;
   left: 46%;
   -webkit-transform: translate(-200%, -200%);
-          transform: translate(-200%, -200%);
+  transform: translate(-200%, -200%);
 }
 
 span:before {
@@ -237,7 +247,7 @@ span:before {
   font-size: 0;
   padding: 3px;
   -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
   left: -20px;
   /* <-- align the circle horizontally */
   top: 0;
@@ -256,6 +266,6 @@ span:after {
   font-size: 0;
   padding: 3px;
   -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
 }
 /*# sourceMappingURL=main.css.map */
