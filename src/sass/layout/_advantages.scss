@@ -27,6 +27,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     &:nth-child(1)::before {
       @include picture__before('../images/advantages/milk@2x.png', 33px);
+      background-size: contain;
     }
   }
   &:nth-child(2)::before {
@@ -35,6 +36,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     &:nth-child(2)::before {
       @include picture__before('../images/advantages/apples@2x.png', 50px);
+      background-size: contain;
     }
   }
   &:nth-child(3)::before {
@@ -43,6 +45,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     &:nth-child(3)::before {
       @include picture__before('../images/advantages/lolipop@2x.png', 44px);
+      background-size: contain;
     }
   }
 }
