@@ -151,48 +151,10 @@
   }
  }
  
-.contacts-button__map,
-.contacts-button__franchise {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 44px;
-  padding: 15px 17px;
-
-  border: transparent;
-  border-radius: 22px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-
-  cursor: pointer;
-}
-
-.contacts-button__map {
-  margin-bottom: 10px;
-
-  min-width: 160px;
-
-  background: $primary-red-color;
-  color: $primary-white-color;
-  
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-button__franchise {
-  width: 164px;
-  background: $primary-white-color;
-  color: $primary-red-color;
-
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-button__icon {
-  margin-left: 14px;
-  width: 8px;
-  height: 10px;
+.contacts-button {
+ width: 161.45px;
+ height: 44px;
+ margin-bottom: 10px;
 }
 
 
