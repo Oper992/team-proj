@@ -19,6 +19,10 @@
   overflow: hidden;
   z-index: 0;
 
+  @media screen and (max-width: 300px) {
+    font-size: 14px;
+  }
+
   &:hover,
   &:focus {
     background-color: transparent;
