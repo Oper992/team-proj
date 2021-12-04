@@ -17,6 +17,7 @@
   border-radius: 22px;
   cursor: pointer;
   overflow: hidden;
+  z-index: 0;
 
   &:hover,
   &:focus {
@@ -77,4 +78,3 @@
     stroke: #ffffff;
   }
 }
-
