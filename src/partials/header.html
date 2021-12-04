@@ -14,21 +14,27 @@
           <img src="images/header_hero/logo.png" alt="Site logo" width="199" />
         </picture>
       </a>
-      <button type="button" class="menu-button">
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu"
+        data-menu-open
+      >
         <svg width="20" height="12">
           <use href="images/icons/sprite.svg#burger"></use>
         </svg>
       </button>
 
-      <div class="menu">
-        <div class="is-open">
+      <div class="menu" data-menu>
+        <div class="is-open" id="menu" data-menu>
           <button type="button" class="button button--white button--buy">
             Buy now
             <svg width="4.68" height="8" class="button__icon">
               <use href="images/icons/sprite.svg#angle"></use>
             </svg>
           </button>
-          <button type="button" class="close-button">
+          <button type="button" class="close-button" data-menu-close>
             <svg width="14" height="14">
               <use href="images/icons/sprite.svg#close"></use>
             </svg>

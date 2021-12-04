@@ -65,8 +65,6 @@
 
 .menu {
   display: none;
-
-  // display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,6 +78,10 @@
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
+}
+
+.menu.is-open {
+  display: block;
 }
 
 .navigation__item {
@@ -101,7 +103,7 @@
 
   &:hover,
   &:focus,
-  :active {
+  &:active {
     color: $primary-red-color;
   }
 }
