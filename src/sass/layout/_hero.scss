@@ -1,0 +1,81 @@
+.hero-section {
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+
+  background-color: $background-dark-pink-color;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    display: block;
+    width: 346px;
+    height: 344px;
+
+    border-radius: 50%;
+    background-color: $decoration-pink-color;
+  }
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 502px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
+}
+
+.hero-section__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section__title {
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  &--red {
+    color: $primary-red-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 218px;
+  }
+}
+
+.button--accent {
+  width: 63px;
+  height: 24px;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.button--white {
+  width: 83px;
+  height: 24px;
+  padding: 0;
+}
+
+.hero-section__buttons {
+  display: flex;
+}
+
+.hero-section__image--hero {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  height: 410px;
+}
