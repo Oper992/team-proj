@@ -57,30 +57,12 @@
   }
 }
 
-.about__wrapper::before {
-  content: '';
-
-  display: block;
-  height: 87.2vw;
+.about__img {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 14.4vw;
 
-  background-image: url('../images/about/mobile-cow.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/about/mobile-cow@2x.png');
-  }
-
   @media screen and (min-width: 320px) {
-    width: 280px;
-    height: 279px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 46px;
   }
 }
