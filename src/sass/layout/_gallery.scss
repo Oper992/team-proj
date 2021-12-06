@@ -26,14 +26,14 @@
 
   @media screen and (min-width: 768px) {
     grid-template-columns: 1.1fr 1.1fr 2.2fr 1.1fr 1.1fr 1.1fr;
-    grid-template-rows: 33px 33px 33px 24px 33px 22px 33px 33px 33px;
-    padding-left: 30px;
-    padding-right: 30px;
+    grid-template-rows: 35px 36px 36px 26px 36px 24px 35px 35px 35px;
+    // padding-left: 30px;
+    // padding-right: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-    grid-template-rows: 47px 47px 47px 34px 47px 34px 47px 47px 47px;
+    grid-template-columns: 2.1fr 2.1fr 2.1fr 2.1fr 2.1fr 2fr;
+    grid-template-rows: 52px 52px 52px 44px 51px 42px 47px 47px 47px;
   }
 }
 
@@ -56,28 +56,28 @@
 
 .gallery__item {
   @media screen and (min-width: 768px) {
-    width: 90px;
-    height: 90px;
+    width: 99px;
+    height: 99px;
   }
 
   @media screen and (min-width: 768px) {
     &:hover,
     &:focus {
-      transform: scale(1.8);
+      transform: scale(1.4);
     }
   }
 }
 
 .gallery__item {
   @media screen and (min-width: 1200px) {
-    width: 130px;
-    height: 130px;
+    width: 147px;
+    height: 147px;
   }
 
   @media screen and (min-width: 1200px) {
     &:hover,
     &:focus {
-      transform: scale(2);
+      transform: scale(1.5);
     }
   }
 }
@@ -120,13 +120,13 @@
   //grid-row-end: 7;
 
   @media screen and (min-width: 768px) {
-    width: 180px;
-    height: 180px;
+    width: 198px;
+    height: 198px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 260px;
-    height: 260px;
+    width: 294px;
+    height: 294px;
   }
 }
 
