@@ -47,14 +47,14 @@
       padding: 20px;
       width: 95%;
     }
-    @media screen and (min-width: 480px) and (max-width: 1599px) {
+    @media screen and (min-width: 480px) {
       padding: 35px;
       width: 450px;
     }
-    /*@media screen and (min-width: 1100px) {
+    @media screen and (min-width: 1200px) {
       width: 528px;
       min-height: 581px;
-    }*/
+    }
   }
 
   &__button--close {
