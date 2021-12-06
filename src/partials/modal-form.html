@@ -51,12 +51,22 @@
             </div>
             
 
-            <button type="button" class="button button--accent contacts-button form__button">Send
+            <button type="button" class="button button--accent contacts-button form__button" data-modal-close >Send
                 <svg class="button__icon " width="20" height="20">
                     <use href="./images/icons/sprite.svg#angle"></use>
                 </svg>
             </button>
 
+            <div class="modal is-hidden" data-thank>
+                <div class="modal__content modal__location">
+                    <button type="button" class="modal__button--close" data-close>
+                        <svg class="modal__svg" width="11" height="11">
+                            <use href="./images/icons/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <p class="modal__title modal__title--location">Thank you! We will contact you later :)</p>                   
+            
+            </div>
         </form>
     </div>
 
