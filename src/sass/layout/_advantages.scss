@@ -29,8 +29,15 @@
 .advanteges__item {
   position: relative;
   padding-top: 66px;
-  @media screen and (max-width: 480px) {
+
+  @media screen and (min-width: 230px) and (max-width: 767px) {
     width: 230px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
   }
 
   @media screen and (min-width: 768px) {
@@ -99,10 +106,12 @@
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.146;
+    margin-bottom: 15px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 1.138;
+    margin-bottom: 18px;
   }
 }
 
